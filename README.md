@@ -15,8 +15,6 @@ The core of the simulation is based on a grid where connections (or 'bonds') bet
     * `bfs_iterative` iterates over the entire grid, running `bfs_subiterative` on every unvisited site to find **all** connected components. It tracks and returns the ID (`maxid`) of the largest component found.
 4.  **Visualization (`show`):** The `pygame` window draws the grid. Each connected component is assigned a random color, *except* for the **largest component (`maxid`), which is colored bright red** (255, 0, 0).
 
-> **Note on `delete`:** The `delete` function seems to set the bond status to `1`, which is then checked in the `neighbours` function: `if (state[x][y][direction] == 1):`. This implies that in this code, a value of **`1` means the bond is present/open**, and a value of **`0` means the bond is absent/closed**. The name `delete` is slightly misleading based on this logic, as it *creates* the connection. Assuming `1` = connected/open bond.
-
 ---
 
 ## Prerequisites
