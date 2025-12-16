@@ -4,7 +4,7 @@ This project (under the supervision of Fu-Hsuan Ho for 3rd year of math bachelor
 
 ---
 
-## ⚙️ How it Works
+## How it Works
 
 The core of the simulation is based on a grid where connections (or 'bonds') between adjacent sites are randomly present or absent based on a given probability $p$.
 
@@ -30,12 +30,6 @@ pip install pygame
 ```bash
 python percolationWindow.py
 ```
-
-You can easily adjust the simulation parameters at the end of the script:
-Variable	Description	Default Value
-N	The size of the square lattice (N×N).	100
-probability	The bond occupation probability p. This is the chance that a bond is deleted/closed in the percolate function.	0.5
-display	The size of the display window (set to 700x700).	700
 
 Key Concept: Critical Probability (pc​)
 
